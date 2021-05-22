@@ -85,7 +85,7 @@ function Menu() {
             <MenuRow
               imgsrc={require("./MenuRow/Images/handshake.png").default}
               title="ADD RESOURCE"
-              description="We need every helping hand possible.."
+              description="We need every helping hand possible. Be a force for good and help others."
             />
           </Link>
         </div>
