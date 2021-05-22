@@ -8,14 +8,15 @@ function Details() {
   return (
     <div className="details">
       <div className="header">
-        <p>HOME TREATMENT</p>
-        <p id="disclaimer">
+        <p id="disclaimer" style={{fontSize:'1.5rem'}}>SELF TREATMENT AND HELP</p>
+        {/* <p id="disclaimer">
           Disclaimer - This Clinical Guidance (“Guidance”) is provided for
           informational and educational purposes only. Please consult a doctor
           before following any of these stuffs.
-        </p>
+        </p> */}
       </div>
       <div className="details-body self">
+      <h3>MENTAL HEALTH FACTS</h3>
       <HomeTreatmentRow
           desc="Mental Health is also Health. Don't Ignore it."
           imgsrc={require("../Menu/MenuRow/Images/mentalhealth.jpg").default}
@@ -24,6 +25,8 @@ function Details() {
           desc="Talking to others about your probelms helps to relieve stress and provide mental calm. "
           imgsrc={require("../Menu/MenuRow/Images/talk.jpg").default}
         />
+
+       <h3>COVID SELF PRECAUTIONS</h3>
         <HomeTreatmentRow
           desc="Self Isolation is Mandatory"
           imgsrc={require("../Menu/MenuRow/Images/selfisolation.jpeg").default}
@@ -86,46 +89,6 @@ function Details() {
             <li>Passive Leg movements for blood circulation</li>
           </ul>
           <br />
-          <h3>
-            MEDICINES REQUIRED -{" "}
-            <span className="span">
-              Consult a doctor before taking them since they have undesired side
-              effects depending upon your health condition. Take at your own
-              risk.
-            </span>
-          </h3>
-          <HomeTreatmentRow
-            desc="Dexamethasone 6mg/day."
-            imgsrc={
-              require("../Menu/MenuRow/Images/dexamethasone.jpeg").default
-            }
-          />
-          <HomeTreatmentRow
-            desc="Prednisone 40mg."
-            imgsrc={require("../Menu/MenuRow/Images/prednisone.jpeg").default}
-          />
-          <HomeTreatmentRow
-            desc="MethylPrednisolone 30mg."
-            imgsrc={
-              require("../Menu/MenuRow/Images/methylprednisolone.jpeg").default
-            }
-          />
-          <HomeTreatmentRow
-            desc="Budesonide. 800MCG twice daily through spacer."
-            imgsrc={require("../Menu/MenuRow/Images/budesonide.jpeg").default}
-          />
-          <HomeTreatmentRow
-            desc="Paracetamol. Take 1g every 6 to 8 hours if you have fewer."
-            imgsrc={require("../Menu/MenuRow/Images/paracetamol.jpeg").default}
-          />
-          <HomeTreatmentRow
-            desc="Oxygen cylinder. Start slow(2 to 4 litres/minute using nasal cannula after that mask is required. You
-                may use the mask at the beginning also). Scale it to 6 ltr/min if required to maintain oxygen saturation > 92%.
-                "
-            imgsrc={
-              require("../Menu/MenuRow/Images/oxygencylinder.jpeg").default
-            }
-          />
 
           <li>If Oxygen Saturation is &lt; 90%</li>
           <ul>
