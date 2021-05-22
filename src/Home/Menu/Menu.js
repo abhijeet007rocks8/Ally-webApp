@@ -27,14 +27,14 @@ function Menu() {
         <div className="lhs-body">
            <Link to="/">
             <MenuRow
-              imgsrc={require("./MenuRow/Images/Support.jpeg").default}
+              imgsrc={require("./MenuRow/Images/Support.png").default}
               title="MENTAL SUPPORT"
               description="Talking to a Person can relieve your Mental Stress."
             />
             </Link>
             <Link to="/food">
             <MenuRow
-              imgsrc={require("./MenuRow/Images/food.jpeg").default}
+              imgsrc={require("./MenuRow/Images/food.png").default}
               title="FOOD"
               description="Food is a common necessity."
             />
