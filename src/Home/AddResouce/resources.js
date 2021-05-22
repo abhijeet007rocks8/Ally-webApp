@@ -75,11 +75,11 @@ function Resource() {
             <p id="disclaimer" style={{fontSize:'1.3rem'}}>Add Resources</p> <br/>
                 <fieldset><br/>
                     <label for="name">Provider Name: </label>
-                    <input type="text" id="name" required name="name" onChange={(event) => setname(event.target.value)} value={name} /><br/><br/>
+                    <input type="text" id="name" required name="name"  style={{padding:"0.4rem"}} onChange={(event) => setname(event.target.value)} value={name} /><br/><br/>
                     <label for="address">Provider Address: </label>
-                    <input type="text" id="address" required name="address" onChange={(event) => setaddress(event.target.value)} value={address} /><br/><br/>
+                    <input type="text" id="address" required name="address" style={{padding:"0.4rem"}} onChange={(event) => setaddress(event.target.value)} value={address} /><br/><br/>
                     <label for="address">Provider Contact: </label>
-                    <input type="tel" id="number" name="number" pattern="^\d{3}-\d{3}-\d{4}$" required="required" onChange={(event) => setnumber(event.target.value)} value={number} /><br/><br/>
+                    <input type="tel" id="number" name="number" pattern="^\d{3}-\d{3}-\d{4}$" required="required" onChange={(event) => setnumber(event.target.value)} value={number} style={{padding:"0.4rem"}}/><br/><br/>
                     <div id='selector'>
                     <Select
                     placeholder="Select City"
@@ -88,7 +88,7 @@ function Resource() {
                     onChange={handleChange} /><br/>
                     </div>
                     <label for="address">Provider Whatsapp: </label>
-                    <input type="tel" id="whatsapp" name="whatsapp" pattern="^\d{3}-\d{3}-\d{4}$" required="required" onChange={(event) => setwhatsapp(event.target.value)} value={whatsapp}/><br/><br/>
+                    <input type="tel" id="whatsapp" name="whatsapp" pattern="^\d{3}-\d{3}-\d{4}$" required="required" onChange={(event) => setwhatsapp(event.target.value)} value={whatsapp} style={{padding:"0.4rem"}}/><br/><br/>
                     <div id="selector">
                     <Select
                     placeholder="Select Resource"
@@ -96,11 +96,10 @@ function Resource() {
                     options={data1}
                     onChange={handleChangeresource} />
                     </div><br/>
-
+                    {showerror && <p id="disclaimer">There is a problem in the form. Please check the enteries</p>}
                     <button className="button"  variant="contained" onClick={newMessage}>Submit</button>
                     <br/><br/>
 
-                    {showerror && <p>There is a problem in the form. Please check the enteries</p>}
         </fieldset>
             </div>
         </div>

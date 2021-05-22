@@ -32,7 +32,7 @@ function Details() {
 
 
   useEffect(() => {
-    db.collection("mentalsupport")
+    db.collection("Mental Support")
       .orderBy("name", "asc")
       .onSnapshot((snapshot) =>{
         setDetails(snapshot.docs.map((doc) => doc.data()));

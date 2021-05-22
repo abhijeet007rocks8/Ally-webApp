@@ -33,7 +33,7 @@ function Details() {
 
 
   useEffect(() => {
-    db.collection("covidtestcenter")
+    db.collection("Testcenter")
       .orderBy("name", "asc")
       .onSnapshot((snapshot) =>{
         setDetails(snapshot.docs.map((doc) => doc.data()));
