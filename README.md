@@ -1,2 +1,2 @@
 ### `Hosted Website name`
-https://covid-resources-94d93.web.app/
+https://ally-webapp-2376f.firebaseapp.com
