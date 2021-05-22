@@ -43,7 +43,7 @@ function Details() {
   return (
     <div className="details">
       <div className="header">
-        <p>COVID TEST CENTER</p>
+        <p id="disclaimer" style={{fontSize:'1.3rem'}}>COVID TEST CENTER</p>
       </div>
       <div style={{display: 'flex',width:'100%', flexDirection: 'column',alignItems: 'center'}}>
       <div style={{width:'315px'}}>

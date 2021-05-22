@@ -9,11 +9,6 @@ function Details() {
     <div className="details">
       <div className="header">
         <p id="disclaimer" style={{fontSize:'1.5rem'}}>SELF TREATMENT AND HELP</p>
-        {/* <p id="disclaimer">
-          Disclaimer - This Clinical Guidance (“Guidance”) is provided for
-          informational and educational purposes only. Please consult a doctor
-          before following any of these stuffs.
-        </p> */}
       </div>
       <div className="details-body self">
       <h3>MENTAL HEALTH FACTS</h3>
