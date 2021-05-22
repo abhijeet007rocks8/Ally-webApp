@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react'
 import db from '../../firebase' 
 import Select from 'react-select';
 import SelectInput from '@material-ui/core/Select/SelectInput';
+import './resources.css'
 
 function Resource() {
     const [name,setname] = useState("")
@@ -26,11 +27,13 @@ function Resource() {
     ];
     
     const data1 = [
-      {value: 1,label: "oxygen"},
-      {value: 2,label: "ambulance"},
-      {value: 3,label: "plasma"},
-      {value: 4,label: "medicine"},
-      {value: 5,label: "covidtestcenter"},
+      {value: 1,label: "Mental Support"},
+      {value: 2,label: "Food"},
+      {value: 3,label: "Oxygen"},
+      {value: 4,label: "Ambulance"},
+      {value: 5,label: "Plasma"},
+      {value: 6,label: "Medicine"},
+      {value: 7,label: "Testcenter"},
       // {value: 6,label: "beds"}
     ];
 
@@ -69,7 +72,7 @@ function Resource() {
         <div className="resource">
           
             <div className="header">
-              Add Resources <br/><br/>
+            <p id="disclaimer" style={{fontSize:'1.3rem'}}>Add Resources</p> <br/>
                 <fieldset><br/>
                     <label for="name">Provider Name: </label>
                     <input type="text" id="name" required name="name" onChange={(event) => setname(event.target.value)} value={name} /><br/><br/>
@@ -77,7 +80,7 @@ function Resource() {
                     <input type="text" id="address" required name="address" onChange={(event) => setaddress(event.target.value)} value={address} /><br/><br/>
                     <label for="address">Provider Contact: </label>
                     <input type="tel" id="number" name="number" pattern="^\d{3}-\d{3}-\d{4}$" required="required" onChange={(event) => setnumber(event.target.value)} value={number} /><br/><br/>
-                    <div style={{margin:'0rem 0.9rem'}}>
+                    <div id='selector'>
                     <Select
                     placeholder="Select City"
                     value={city}
@@ -86,7 +89,7 @@ function Resource() {
                     </div>
                     <label for="address">Provider Whatsapp: </label>
                     <input type="tel" id="whatsapp" name="whatsapp" pattern="^\d{3}-\d{3}-\d{4}$" required="required" onChange={(event) => setwhatsapp(event.target.value)} value={whatsapp}/><br/><br/>
-                    <div style={{margin:'0rem 0.9rem'}}>
+                    <div id="selector">
                     <Select
                     placeholder="Select Resource"
                     value={resource}

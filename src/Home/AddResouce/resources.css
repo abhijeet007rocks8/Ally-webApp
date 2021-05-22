@@ -1,8 +1,8 @@
 .resource {
   flex: 0.7;
+  height: 100vh;
   overflow: scroll;
-  width: 100%;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   background-color: #f6f6f6;
   overflow-x: hidden;
 }
@@ -57,8 +57,8 @@ body{
   font-size: 90%;
   height: 5%;
   width: 30%;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   margin-left: 35%;
   margin-top: 4%;
   display: flex;
@@ -68,4 +68,36 @@ body{
   background-color: #1db096;
   border-radius: 20px;
   box-shadow: 5px 10px 10px rgba(24,139,119, 0.02);
+}
+
+#disclaimer {
+  filter: drop-shadow(0 0 0.2rem crimson);
+}
+
+#selector{
+    margin:0rem 20rem;
+}
+
+@media screen and (max-width:1200px) {
+  #selector {
+       margin: 0rem 15rem;
+   }
+}
+
+@media screen and (max-width:900px) {
+  #selector {
+       margin: 0rem 10rem;
+   }
+}
+
+@media screen and (max-width:600px) {
+  #selector {
+       margin: 0rem 8rem;
+   }
+}
+
+@media screen and (max-width:450px) {
+  #selector {
+       margin: 0rem 1rem;
+   }
 }
