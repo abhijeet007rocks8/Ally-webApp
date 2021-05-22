@@ -23,6 +23,18 @@ function Menu() {
           </div>
            </div>
         <div className="lhs-body">
+        <Link to="/">
+            <MenuRow
+              imgsrc={require("./MenuRow/Images/Support.jpeg").default}
+              title="MENTAL SUPPORT"
+              description="Talking to a Person can relieve your Mental Stress."
+            />
+            <Link to="/">
+            <MenuRow
+              imgsrc={require("./MenuRow/Images/food.jpeg").default}
+              title="FOOD"
+              description="Food is a common necessity."
+            />
           <Link to="/">
             <MenuRow
               imgsrc={require("./MenuRow/Images/oxygen.jpeg").default}
@@ -75,7 +87,9 @@ function Menu() {
         </div>
         
       </div>
-      <Route path="/" exact component={Oxygen} />
+      <Route path="/" exact component={Msupport} />
+      <Route path="/food" exact component={Food} />
+      <Route path="/oxygen" exact component={Oxygen} />
       <Route path="/ambulance" exact component={Ambulance} />
       <Route path="/plasma" exact component={Plasma} />
       <Route path="/medicine" exact component={Medicine} />
