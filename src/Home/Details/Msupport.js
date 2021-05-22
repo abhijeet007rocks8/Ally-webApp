@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState,useEffect} from 'react'
 import "./Details.css";
 import Row from "./DetailRow/DetailRow";
 import db from "../../firebase.js";
@@ -40,11 +40,46 @@ function Details() {
   }, []);
 
 
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <div className="details">
+      <div className="header">
+        <p>MENTAL HEALTH SUPPORTERS</p>
+      </div>
+      <div style={{display: 'flex',width:'100%', flexDirection: 'column',alignItems: 'center'}}>
+      <div style={{width:'315px'}}>
+      <Select
+            placeholder="Select City"
+            value={selectedOption}
+            options={data}
+            onChange={handleChange} />
+      </div>
+      </div>
+      <div className="details-body">
+        {details.length==0?<div className="no-data"><p>!! SORRY NO DETAILS AVAILABLE !!</p></div>:
+        details.map((node)=>{
+          return(
+            <>
+              {(city=="All")&& <Row
+              shop={node.name}
+              address={node.address}
+              number={node.number}
+              resource={node.resource}
+              whatsapp={node.whatsapp}
+              city={node.city}/>}
+
+              {(city!="All")&&(city!="")&&(node.city==city)&& <Row
+              shop={node.name}
+              address={node.address}
+              number={node.number}
+              resource={node.resource}
+              whatsapp={node.whatsapp}
+              city={node.city}/>}
+            </>
+        )})
+        }
+      </div>
+    </div>
+  );
 }
 
 export default Details;

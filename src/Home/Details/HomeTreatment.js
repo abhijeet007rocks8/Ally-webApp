@@ -16,6 +16,14 @@ function Details() {
         </p>
       </div>
       <div className="details-body self">
+      <HomeTreatmentRow
+          desc="Mental Health is also Health. Don't Ignore it."
+          imgsrc={require("../Menu/MenuRow/Images/mentalhealth.jpg").default}
+        />
+      <HomeTreatmentRow
+          desc="Talking to others about your probelms helps to relieve stress and provide mental calm. "
+          imgsrc={require("../Menu/MenuRow/Images/talk.jpg").default}
+        />
         <HomeTreatmentRow
           desc="Self Isolation is Mandatory"
           imgsrc={require("../Menu/MenuRow/Images/selfisolation.jpeg").default}

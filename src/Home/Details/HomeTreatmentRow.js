@@ -8,7 +8,7 @@ function HomeTreatmentRow(props) {
         <img src={props.imgsrc} alt="" />
       </div>
       <div>
-        <p>{props.desc}</p>
+        <p style={{textAlign:'center'}}>{props.desc}</p>
       </div>
     </div>
   );
