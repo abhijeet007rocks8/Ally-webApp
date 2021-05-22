@@ -9,6 +9,8 @@ import Medicine from "../Details/Medicine";
 import CovidTestCenter from "../Details/CovidTestCenter";
 import HomeTreatment from "../Details/HomeTreatment";
 import Resource from "../AddResouce/resources";
+import Msupport from "../Details/Msupport";
+import Food from "../Details/Food";
 
 function Menu() {
   
@@ -23,19 +25,21 @@ function Menu() {
           </div>
            </div>
         <div className="lhs-body">
-        <Link to="/">
+           <Link to="/">
             <MenuRow
               imgsrc={require("./MenuRow/Images/Support.jpeg").default}
               title="MENTAL SUPPORT"
               description="Talking to a Person can relieve your Mental Stress."
             />
-            <Link to="/">
+            </Link>
+            <Link to="/food">
             <MenuRow
               imgsrc={require("./MenuRow/Images/food.jpeg").default}
               title="FOOD"
               description="Food is a common necessity."
             />
-          <Link to="/">
+            </Link>
+          <Link to="/oxygen">
             <MenuRow
               imgsrc={require("./MenuRow/Images/oxygen.jpeg").default}
               title="OXYGEN"
