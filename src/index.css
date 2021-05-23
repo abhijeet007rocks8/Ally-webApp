@@ -5,6 +5,7 @@
   user-select: none;
 }
 
+
 @media screen and (max-width:500px) {
   *{
     scroll-behavior: smooth;

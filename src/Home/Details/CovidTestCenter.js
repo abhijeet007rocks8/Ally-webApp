@@ -20,7 +20,9 @@ function Details() {
     {value: 7,label: "Kanpur"},
     {value: 8,label: "Bhopal"},
     {value: 9,label: "Indore"},
-    {value: 10,label: "Others"}
+    {value: 10,label: "Jhansi"},
+    {value: 11,label: "Others"}
+
   ];
    
   const [selectedOption, setSelectedOption] = useState("All");
