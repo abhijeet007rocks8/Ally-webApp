@@ -20,7 +20,7 @@ function Menu() {
         <div className="lhs-header">
           <div className="lhs-header-1">
             <div className="para">
-              <p>Resources</p>
+              <p id="disclaimer" style={{fontSize:'1.3rem'}}>Resources</p>
             </div>
           </div>
            </div>

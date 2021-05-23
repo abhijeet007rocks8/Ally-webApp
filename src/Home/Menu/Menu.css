@@ -39,3 +39,6 @@
 #counter-image {
   filter: drop-shadow(0 0 10px green);
 }
+#disclaimer {
+  filter: drop-shadow(0 0 0.2rem crimson);
+}
